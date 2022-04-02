@@ -1,0 +1,108 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1153.33333333333,869.333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Download_Save_Extract_File" sap:VirtualizedContainerService.HintSize="476,804.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: GitHub - udacity/cd00284-intro-to-RPA-with-UiPath-project: project for nd340-cq, c" sap:VirtualizedContainerService.HintSize="434,712.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="66e1f1b6-747d-4476-b58b-b56387af1868" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,494.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick sap2010:Annotation.AnnotationText="This activity will click on code in the git hub file&#xD;&#xA;" ClickType="Single" DisplayName="Click 'Code'" sap:VirtualizedContainerService.HintSize="334,203.333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66e1f1b6-747d-4476-b58b-b56387af1868" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://github.com/udacity/cd00284-intro-to-RPA-with-UiPath-project" DesignTimeRectangle="1260, 429, 118, 48" FriendlyName="'Code'" FullSelectorArgument="&lt;webctrl parentid='repo-content-pjax-container' tag='SUMMARY' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='repo-content-pjax-container' tag='SUMMARY' type='' aaname='  Code ' check:text='Code' /&gt;" Guid="1a63b32a-cbf2-402d-9e8f-b0dda249b7ab" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHoAAAA0CAYAAABFCyz4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUnSURBVHhe7ZzPaxtHFMf7D/TQQwn0VtLiFLs51G3cNsVqCKRJIaA/ID7p5lN1MxTTHoyayFFdHYQvpj64IRBfKhOKCEGiYLkYg0NsQpUiKoPj1CzC2CLYEsZ8O0/aXY1WT7Kd2F6t9g18Dt55s2v2M29+LGjeevudcxC6HxHtE0S0T2gr+r0venAhNIBPfryKSxM3MBD/VuggyAm5IUfkinNowYp+t/d99IUH0f/zNfRGA7hw5zI+/OlznI9cEjoIckJuyFH/xLWqM3LHOW0STT2DekrfeIC9udC59N0NVN1x2d0gmnoDBfbc/pK9kdD5kDty6MzsBtGU+h+Pf83eQPAO5JBc6m5t0ZTu/RPfsA0F7/GpcqkP4bZoWrn1RgfZRoL36BsfrDptEk3L9J7bl9lGgveg1Tg5bRJNE7hsoboHcklOm0TTBpxrIHgXciqifYCI9gki2ieIaJ8gon2CiPYJIton+F50ZK2EWingAVPfLXSO6OkxJJ7nYOxVzBdvlv0SDCOLxH2mzQkgopng0yL01wqMA/N9s6WEhcd82zdFRDPBp0HoaQFl81UDFRgvs5jJjCI8VyO2lMWz0gYyIvqNcFf0/STyVibvbyCVCvJxp4iIZoJPmti6NR9XsDx/PMmB339DplhCWRvyy3tFPFuN4iYTf346iqShxau5P69iY21EB1IpNZpobQ7UeuFlCj9MN8Z5ARdFx7GwZ77AV1mMsDE8jcO9Ko75vWwkEdLbzKqRY9+spKJ3Dvt6o+jQUg47Zg32KyhXtEXi7hIik9r9PYB7oidTWDff285anI/hmE3b7coltRq/Z44Ek6OYemFlJ5B/Omy2CWJq05JUwvLiKALV60MYWdU7jCbanlIqKuuteIXWYYz8mHl/b+Ce6MdLdsYcR7Q9px4oMU1brjFkXtWqsZ3GLbo2qeSYl5qfE8TMplmpiR7JF2uXrHto2M9Xo1DYUafz/R8RrP7395GgWO4eJ4l7oueyMGqv7Biig0humY22UvVM07BFVFaQoGtpq0OpLVq6OT6wulGtrYvWntGu7Knh23EvJ0eRfRaSCfdER+qZxmUOjzavF5NMPbOKVvN5rbTYi9v1lmjtGZUi8kaBZz3ZNqMt2sk+K8mEi6KHtcwpIvOQi3EyjNS22eSwjLYybjFX+7uF6PA/5jBtiz78GceFk32WkgkXRathU0mwF0O7K5ia5eN07C3ZYXO0yviqJG2KaF5AfVeXqs3RiRfWM3KYOaHVtS77rCUTroqmF/2gqG1b1D41v5ZEzPwqFp6LIvHE8WXsYV1c61W3vi/X5FNWzw+bWTqEmFp0savuP1fs6/SMmLZvDtyLq/144bW+1JFgNyQTLotWKEEzm5agVqVx2D1sH238G28YcgP2gswsdrzqWFuOOb1KUJvra4X20fU9d4v5voNxX3SVIG6lU1jeLmkvU5UD9XJ3N7D8/FeEHUPozUfOr1YV7JRySM1r+15HfH63PnqUdwtIPhpqXrzZBBFezDa0qf0/BSw8afH1rYPpENHCaSOifYKI9gki2ieIaJ8gon0CK1p+NttdtPzZLP1o+qM7X7GNBO9BLtkfwtMxCHR8EddI8B50YA17tAUdbPLZL9fxQWSAbSh4B3JILtnDagg6suji3StsY8E7XIxdaX38FFE/UE4OrfEq5I4ctj1QjqB0p0A5ItJ7HPmISAvqDZT6cuhrZ0NOXvvQVx3qGbRyo2U69RTagAudAzkhN+SIy2KdtqKFbuEc/gcRqFptadSYkwAAAABJRU5ErkJggg==" InformativeScreenshot="e96412756dbca0b21f39dbd876cd3a44.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='GitHub - udacity/cd00284-intro-to-RPA-with-UiPath-project: project for nd340-cq, cd0024-intro-to-RPA-with-UiPath-project' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Download ZIP'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66e1f1b6-747d-4476-b58b-b56387af1868" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://github.com/udacity/cd00284-intro-to-RPA-with-UiPath-project" DesignTimeRectangle="837, 812, 516, 32" ElementType="Text" FriendlyName="'Download ZIP'" FullSelectorArgument="&lt;webctrl aaname='                Download ZIP ' parentid='repo-content-pjax-container' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                Download ZIP ' parentid='repo-content-pjax-container' tag='A' type='' check:text='Download ZIP' /&gt;" Guid="496058a6-1fd0-4ce9-acf5-654b4e0df9bb" ImageBase64="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" InformativeScreenshot="5a1288420ed46cfae352f28e9a9aaf3d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='GitHub - udacity/cd00284-intro-to-RPA-with-UiPath-project: project for nd340-cq, cd0024-intro-to-RPA-with-UiPath-project' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1260, 429, 118, 48" FriendlyName="'Code'" FullSelectorArgument="&lt;webctrl parentid='repo-content-pjax-container' tag='SUMMARY' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='repo-content-pjax-container' tag='SUMMARY' type='' aaname='  Code ' check:text='Code' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAANcSURBVFhHtVdLa1NBGI1vF75l5t48GmNNDRjQRXAfBBE3LoRuREFd6MadxY0gMT9AfAVX7sU/oLsquKiCqF0IRRAfUBdaNa1Ci7XxnOl3Y3LzJb3mxgOHJN/jfHe+mbkzSURFsVhcn7T2iG9tzTdmHJzyrJ0j+d3Z4GMMYyUtPnLG+BC+4xlTBxsRWWcOc0Xm35HP5zdApAr+UApEInOpQS2RjQYZ9YQm2g+pFbkbGWv3Yz4/akJxSE1qSxkdbuT/oXhAanfthMx5W9uR8Bq8B/uXVntEfkPuffB5q5011DUBR7U1kEx63jn6yuXyWs/zzmLLfXK+5e03CfHH4CN8fwX7d/qgMwPbhWArYlseD/QCshZ9Tcii61jtvu8flBCHojGbYNtXqVRWi6mJRqOxKp1O781ms9vF5IAH392hi1ptUwED93lbEJlMJksS0jdSqVRW02ZNF8BWwaC+ZNC+Uy4oBtCxo5o2WHfTxFen4nRtQgd2iU7fwLTshNZnrQZrs/01zQn7JdGIDSzKM11q1Ogc15yZTGZE8mMjl8tt02qwNh9gqsOB9nNVS/5AAM33HXVQO+H2dNhh7VvJGxhQ7Fm4DmvzyX52OIyZlbyBgYMK12FttTWOnmclNzawBjaizny4Bmzv+ABPww4SW+Sk5MdGj60+kUgac0N1Ys4GtRBR6IFWg7XVwyIgEsdEo29gIKc1bZK1E4VCYTN+zIadwiU8RLVUKq0TvcjggcUBQGMxpBlwloebC0bg7abD2mspzzshR6yzYRQfEFNJWXsYL6gdLknB8PDwVizeQzjGLyP/TVNToe95tyQN1zBj8iiw4BzGfGUhPh1EXoQTYXuiHccEctW3apioNT9k7R5JWwaMV1uC6jhEMNjMCOxtBwm6c0xSOoCTr9wa243spqT8Ba9JobbfpV0uKxdhu84bUq8rNqcnyO9K1OiqgcvDEIKmJXiRZ7m4IgN5vyRf4zRrSKiOtLUHGCgJixj9Q3AMW+Y8Pq+Mjo6ukVAVzJHcMKepLWG9wflHq14qIo2V/vch5nc4B1qTvJpJSDTINb0Ctr3D+V6XEBWIWQpikbsAVlfK6QluF+zZmxCsYyRzvKKLSwUKzjAOn7VBXmrclTx85dbA6UP3tsjPFZBI/AF57FPSbdtFuAAAAABJRU5ErkJggg==" InformativeScreenshot="4250e9a54af0baf5a91a265c0372b919.png" Selector="&lt;html app='msedge.exe' title='GitHub - udacity/cd00284-intro-to-RPA-with-UiPath-project: project for nd340-cq, cd0024-intro-to-RPA-with-UiPath-project'/&gt;" Url="https://github.com/udacity/cd00284-intro-to-RPA-with-UiPath-project" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
